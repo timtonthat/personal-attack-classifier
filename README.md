@@ -12,8 +12,8 @@ Wikipedia detox project achievement is outlined in [__Ex Machina: Personal Attac
 
 The repository is divided in two directories:
 
-1.`Build a personal attack classifier` : Detailled documentation on end-to-end NLP modeling process
-2.`Serving a personal attack classifier` : REST API code to serve the trained model 
+1. `Build a personal attack classifier` : Detailled documentation on end-to-end NLP modeling process
+2. `Serving a personal attack classifier` : REST API code to serve the trained model 
 
 ## Requirements
 
