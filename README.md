@@ -12,8 +12,8 @@ Wikipedia detox project achievement is outlined in [__Ex Machina: Personal Attac
 
 The repository is divided in two directories:
 
-1. `Build a personal attack classifier` : Detailled documentation on end-to-end NLP modeling process
-2. `Serving a personal attack classifier` : REST API code to serve the trained model 
+1. `Training a personal attack classifier` : Detailled ipython Notebook on end-to-end NLP modeling process using LSTM
+2. `Serving an attack classifier with django` : Code to serve the trained model using django rest framework
 
 ## Requirements
 
@@ -24,3 +24,41 @@ This project uses the following Python libraries
 * `Django REST Framework` : For deployment serving purposes
 * `flashtext` : For fast text processing
 * `Unidecode` : For text formatting
+
+## Install
+ Run in Terminal/Command Prompt:
+
+```
+git clone https://github.com/timtonthat/personal-attack-classifier.git
+cd personal-attack-classifier/Serving\ an\ attack\ classifier\ with\ django/
+python3 -m virtualenv venv
+```
+In UNIX system: 
+
+```
+source venv/bin/activate
+```
+In Windows: 
+
+```
+venv\Scripts\activate
+```
+Download trained model's weights, run:
+```
+git lfs pull
+```
+
+To install all of the required packages to this environment, simply run:
+```
+pip install -r requirements.txt
+```
+
+and all of the required `pip` packages, will be installed, and the app will be able to run.
+
+## How to use the app
+Run this app locally by:
+```
+cd attack_classifier_api
+python manage.py runserver
+```
+Open http://127.0.0.1:8000/attack_classifier/classify_text in your browser.
