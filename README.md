@@ -1,5 +1,7 @@
 # personal-attack-classifier
 
+![Screenshot](/screenshot.PNG?raw=true "screen shot")
+
 This repository documents the process of building an `NLP` personal attack classifier from lab devlopment to `API` serving.
 
 It is a personal take on the Wikipedia detox project's work on building machine learning models for detecting personal attacks and aggressive tone in user and article talk page comments.
